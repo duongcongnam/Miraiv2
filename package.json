@@ -1,5 +1,5 @@
 {
-    "name": "Mirai Bot - Ryan",
+    "name": "MiraiBot-Ryan",
     "version": "1.2.15",
     "description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord.",
     "main": "mirai.js",
@@ -32,6 +32,7 @@
         "jimp": "",
         "lyrics-finder": "^21.7.0",
         "fca-horizon-remake": "",
+        "helyt": "",
         "minimist": "",
         "moment": "^2.29.1",
         "moment-timezone": "",
