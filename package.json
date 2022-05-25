@@ -1,6 +1,6 @@
 {
-    "name": "MiraiBypassD-Jukie",
-    "version": "1.2.14",
+    "name": "Mirai Bot - Ryan",
+    "version": "1.2.15",
     "description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord.",
     "main": "mirai.js",
     "scripts": {
@@ -10,9 +10,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/D-Jukie/miraiv2.git"
+        "url": "git+https://github.com/duongcongnam/Miraiv2.git"
     },
-    "author": "D-Jukie",
+    "author": "Ryan",
     "license": "GPL-3.0",
     "dependencies": {
         "@miraipr0ject/assets": "",
@@ -29,9 +29,9 @@
         "figlet": "",
         "fs-extra": "",
         "gifencoder": "^2.0.1",
-        "helyt": "",
         "jimp": "",
         "lyrics-finder": "^21.7.0",
+        "fca-horizon-remake": "",
         "minimist": "",
         "moment": "^2.29.1",
         "moment-timezone": "",
