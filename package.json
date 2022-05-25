@@ -31,7 +31,7 @@
         "gifencoder": "^2.0.1",
         "jimp": "",
         "lyrics-finder": "^21.7.0",
-        "helyt": "",
+        "fca-horizon-remake": "",
         "minimist": "",
         "moment": "^2.29.1",
         "moment-timezone": "",
@@ -44,7 +44,7 @@
         "semver": "",
         "sequelize": "",
         "simple-youtube-api": "",
-        "sqlite3": "",
+        "sqlite3": "^5.0.8",
         "string-similarity": "",
         "totp-generator": ""
     }
