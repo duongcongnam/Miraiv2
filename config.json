@@ -10,12 +10,15 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "",
-    "PREFIX": "!",
-    "ADMINBOT": [
-        "USERID1",
-        "USERID2"
+    "BOTNAME": "☘R͙y͉̝͖̻̯ͮ̒̂ͮ͋ͫͨⓐn㍿🦅۹",
+    "PREFIX": "%",
+    "OOWNER": [
+        "100047874375055"
     ],
+    "ADMINBOT": [
+        "100047874375055",
+    ],
+    "NDH": [],
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
@@ -27,7 +30,7 @@
         "listenEvents": true,
         "pauseLog": true,
         "logLevel": "error",
-        "selfListen": false,
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"
+        "selfListen": true,
+        "userAgent": "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/012.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.0 Mobile Safari/533.4 3gpp-gba"
     }
 }
