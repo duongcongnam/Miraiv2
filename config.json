@@ -1,0 +1,176 @@
+{
+    "language": "vi",
+    "keyActive": "",
+    "DeveloperMode": false,
+    "autoCreateDB": true,
+    "allowInbox": true,
+    "autoClean": true,
+    "adminOnly": true,
+    "commandDisabled": [
+        "admintag.js"
+    ],
+    "eventDisabled": [],
+    "EMAIL": "100068910213508",
+    "PASSWORD": "123456a@",
+    "OTPKEY": "",
+    "BOTNAME": "𝙈𝙖̆́𝙣",
+    "PREFIX": ".",
+    "ADMINBOT": [
+        "100069316598761",
+        "100004253741257"
+    ],
+    "DATABASE": {
+        "sqlite": {
+            "storage": "data.sqlite"
+        }
+    },
+    "APPSTATEPATH": "appstate.json",
+    "FCAOption": {
+        "forceLogin": true,
+        "listenEvents": true,
+        "pauseLog": true,
+        "logLevel": "error",
+        "selfListen": true,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"
+    },
+    "version": "1.2.14",
+    "checktt": {
+        "maxColumn": 100
+    },
+    "nhancoin": {
+        "cooldownTime": 43200000,
+        "rewardCoin": 200
+    },
+    "help": {
+        "autoUnsend": true,
+        "delayUnsend": 120
+    },
+    "math": {
+        "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "rank": {
+        "APIKEY": "571752207151901|AC-zG86sv6U6kpnT0_snIHBOHJc"
+    },
+    "rankup": {
+        "autoUnsend": true,
+        "unsendMessageAfter": 10
+    },
+    "rname": {
+        "APIKEY": "mi451266190"
+    },
+    "sauce": {
+        "SAUCENAO_API": "61e802b1478f8e85198f28ed6ac2de6efe5d0a41"
+    },
+    "sing": {
+        "YOUTUBE_API": "AIzaSyA3ExvIgr8Flog0ZXOR5bHGNfRyu9FTn4k"
+    },
+    "video": {
+        "YOUTUBE_API": "AIzaSyA3ExvIgr8Flog0ZXOR5bHGNfRyu9FTn4k"
+    },
+    "weather": {
+        "OPEN_WEATHER": "68664cbfccd1ba31db138013ca11ea47"
+    },
+    "work": {
+        "cooldownTime": 1000000
+    },
+    "adminUpdate": {
+        "autoUnsend": true,
+        "sendNoti": true,
+        "timeToUnsend": 15
+    },
+    "ghep": {
+        "APIKEY": "531532681600063|PZKvEhQ2eQ_XGkh5GlhMv6HBS60"
+    },
+    "info": {
+        "APIKEY": "531532681600063|PZKvEhQ2eQ_XGkh5GlhMv6HBS60"
+    },
+    "sim": {
+        "APIKEY": "Meew_4CF6Z7Pk3CYRAbgO0kbgeauOSj2GC6"
+    },
+    "surprise": {
+        "log": true,
+        "out": "",
+        "kickAll": "",
+        "delThread": ""
+    },
+    "shortlink": {
+        "bitlyAPI": ""
+    },
+    "log": {
+        "enable": true
+    },
+    "caesar": {
+        "caeserPassword": "266303"
+    },
+    "tenngaunhien": {
+        "APIKEY": "mi451266190"
+    },
+    "daily": {
+        "cooldownTime": 43200000,
+        "rewardCoin": 500
+    },
+    "covid": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "img": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "noitu": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "hitbutt": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "slap": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "sortword": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjtkaWVuNjkzOUBnbWFpbC5jb20"
+    },
+    "teach": {
+        "APIKEY": "MEWcXVlc3RtaXgwMjI7bXVuNDU2MTIzN0BnbWF"
+    },
+    "singv2": {
+        "YOUTUBE_API": "AIzaSyA3ExvIgr8Flog0ZXOR5bHGNfRyu9FTn4k"
+    },
+    "videov2": {
+        "YOUTUBE_API": "AIzaSyA3ExvIgr8Flog0ZXOR5bHGNfRyu9FTn4k"
+    },
+    "diemdanh": {
+        "cooldownTime": 3000000
+    },
+    "tds": {
+        "APIKEY": "TDS0nIxIXZ2V2ciojIyVmdlNnIsIiMwgXatR3clVXUiojIyV2c1Jye"
+    },
+    "workjke": {
+        "cooldownTime": 1000000
+    },
+    "working": {
+        "cooldownTime": 1200000
+    },
+    "helpv2": {
+        "autoUnsend": true,
+        "delayUnsend": 120
+    },
+    "check": {
+        "maxColumn": 10
+    },
+    "ins": {
+        "APIKEY": "a012e05802msh4ce48bff26d5c0ap151d85jsn4edde7f89de0"
+    },
+    "banner": {
+        "APIKEY": "ntkhang"
+    },
+    "banner2": {
+        "APIKEY": "ntkhang"
+    },
+    "bannerbw": {
+        "APIKEY": "ntkhang"
+    },
+    "baucua": {
+        "APIKEY": "COCAICONCACNE"
+    },
+    "checkweb": {
+        "APIKEY": "AIzaSyAyPQHnnLU2S6Fqy2x6eZIyFOQGe6Xwiek"
+    }
+}
