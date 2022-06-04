@@ -10,7 +10,7 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "☘R͙y͉̝͖̻̯ͮ̒̂ͮ͋ͫͨⓐn㍿🦅۹",
+    "BOTNAME": "a...",
     "PREFIX": "%",
     "OOWNER": [
         "100047874375055"
@@ -18,7 +18,6 @@
     "ADMINBOT": [
         "100047874375055"
     ],
-    "NDH": [],
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
@@ -31,6 +30,7 @@
         "pauseLog": true,
         "logLevel": "error",
         "selfListen": true,
+        "online": true,
         "userAgent": "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/012.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.0 Mobile Safari/533.4 3gpp-gba"
     }
 }
