@@ -2,26 +2,22 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
    const stringSimilarity = require('string-similarity'),
         escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
         logger =  require("../../utils/log.js");
-    const axios = require("axios");
     const moment = require("moment-timezone");
     return async function ({ event }) {
     const dateNow = Date.now()
     const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss DD/MM/YYYY");
-    const { allowInbox, PREFIX, ADMINBOT, DeveloperMode, adminOnly, privateChat } = global.config;
+    const { allowInbox, PREFIX, ADMINBOT, DeveloperMode, adminOnly } = global.config;
 
     const { userBanned, threadBanned, threadInfo, threadData, commandBanned } = global.data;
     const { commands, cooldowns } = global.client;
-    var { body, senderID, threadID, messageID, isGroup } = event;
+    var { body, senderID, threadID, messageID } = event;
 
     var senderID = String(senderID), 
         threadID = String(threadID);
     const threadSetting = threadData.get(threadID) || {}
-    var prefix = threadSetting.PREFIX || PREFIX
+    
     const prefixRegex = new RegExp(`^(<@!?${senderID}>|${escapeRegex((threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : PREFIX )})\\s*`);
         if (!prefixRegex.test(body)) return;
-        if (!ADMINBOT.includes(senderID) && isGroup != true && privateChat == true) return api.sendMessage("[𝐌𝐨𝐝𝐞] - Chỉ Admin Bot được sử dụng lệnh trong tin nhắn riêng", threadID, messageID)
-        if (!ADMINBOT.includes(senderID) && adminOnly == true) return api.sendMessage("[𝐌𝐨𝐝𝐞] - Chỉ Admin Bot được sử dụng lệnh", threadID, messageID)
-        
         if (userBanned.has(senderID) || threadBanned.has(threadID) || allowInbox == ![] && senderID == threadID) {
             if (!ADMINBOT.includes(senderID.toString())) {
                 if (userBanned.has(senderID)) {
@@ -51,10 +47,7 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
             for (const cmd of commandValues) allCommandName.push(cmd)
             const checker = stringSimilarity.findBestMatch(commandName, allCommandName);
             if (checker.bestMatch.rating >= 0.5) command = client.commands.get(checker.bestMatch.target);
-  else {
-            let res = (await axios.get(global.config.configSetupAPI.imgLimk_nino)).data;
- return api.sendMessage({body: global.getText("handleCommand", "commandNotExist", checker.bestMatch.target, prefix), attachment: (await axios.get(res.url, { responseType: "stream" })).data}, threadID, messageID);
-            }
+            else return api.sendMessage(global.getText("handleCommand", "commandNotExist", checker.bestMatch.target), threadID);
         }  
         if (commandBanned.get(threadID) || commandBanned.get(senderID)) {
             if (!ADMINBOT.includes(senderID)) {
@@ -96,7 +89,7 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
         const timestamps = client.cooldowns.get(command.config.name);;
         const expirationTime = (command.config.cooldowns || 1) * 1000;
         if (timestamps.has(senderID) && dateNow < timestamps.get(senderID) + expirationTime) 
-        return api.setMessageReaction('😼', event.messageID, err => (err) ? logger('Đã có lỗi xảy ra khi thực thi setMessageReaction', 2) : '', !![]);
+        return api.setMessageReaction('🖕', event.messageID, err => (err) ? logger('Đã có lỗi xảy ra khi thực thi setMessageReaction', 2) : '', !![]);
         var getText2;
         if (command.languages && typeof command.languages == 'object' && command.languages.hasOwnProperty(global.config.language)) 
             getText2 = (...values) => {
