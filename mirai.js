@@ -6,7 +6,7 @@ const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } =
 const { join, resolve } = require("path");
 const { execSync } = require('child_process');
 const logger = require("./utils/log.js");
-const login = require("fca-horizon-remake");
+const login = require("helyt");
 const axios = require("axios");
 const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const listbuiltinModules = require("module").builtinModules;
@@ -195,7 +195,7 @@ function onBot({ models: botModel }) {
         if (loginError) return logger(JSON.stringify(loginError), `ERROR`);
         loginApiData.setOptions(global.config.FCAOption)
         writeFileSync(appStateFile, JSON.stringify(loginApiData.getAppState(), null, '\x09'))
-        global.config.version = '1.2.14'
+        global.config.version = '1.2.15'
         global.client.timeStart = new Date().getTime(),
             function () {
                 const listCommand = readdirSync(global.client.mainPath + '/modules/commands').filter(command => command.endsWith('.js') && !command.includes('example') && !global.config.commandDisabled.includes(command));
