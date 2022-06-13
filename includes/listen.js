@@ -61,7 +61,7 @@ module.exports = function({ api, models }) {
 	const handleReaction = require("./handle/handleReaction")({ api, models, Users, Threads, Currencies });
 	const handleEvent = require("./handle/handleEvent")({ api, models, Users, Threads, Currencies });
 	const handleCreateDatabase = require("./handle/handleCreateDatabase")({  api, Threads, Users, Currencies, models });
-
+const handleUnsend = require("./handle/handleUnsend")({ api }); 
 	logger.loader(`====== ${Date.now() - global.client.timeStart}ms ======`);
 
 	//////////////////////////////////////////////////
@@ -83,6 +83,7 @@ module.exports = function({ api, models }) {
 				handleEvent({ event });
 				break;
 			case "message_reaction":
+handleUnsend({ event });
 				handleReaction({ event });
 				break;
 			default:
